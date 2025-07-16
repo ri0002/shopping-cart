@@ -13,17 +13,17 @@ A Python-based shopping cart simulator with price validation, categorization, an
 
 ## 🔍 実装した主な機能
 
-| 機能                       | 内容                                                                 |
-|----------------------------|----------------------------------------------------------------------|
-| `add_price`                | 値段の追加（入力値はバリデーション付き）                            |
-| `get_sum_price`            | 合計金額の算出                                                        |
-| `show_prices`              | 値段一覧をフォーマット済みで表示                                      |
-| `get_price_count`          | 値段の数を取得                                                        |
-| `remove_price`             | 任意インデックスの値段を削除                                          |
-| `update_price`             | 値段の更新（入力検証あり）                                            |
-| `categorize_prices`        | 安い／普通／高い のカテゴリに分類                                     |
-| `save_to_csv` / `load_from_csv` | CSVへの保存・読み込み機能                                       |
-| `validate_price`           | 価格が「正の数値」であるかを厳密に検証                                |
+| 機能                           | 内容                                                                 |
+|--------------------------------|----------------------------------------------------------------------|
+| `add_price`                    | 値段の追加（入力値はバリデーション付き）                            |
+| `get_sum_price`                | 合計金額の算出                                                        |
+| `show_prices`                  | 値段一覧をフォーマット済みで表示                                      |
+| `get_price_count`              | 値段の数を取得                                                        |
+| `remove_price`                 | 任意インデックスの値段を削除                                          |
+| `update_price`                 | 値段の更新（入力検証あり）                                            |
+| `categorize_prices`            | 安い／普通／高い のカテゴリに分類                                     |
+| `save_to_csv` / `load_from_csv`| CSVへの保存・読み込み機能                                            |
+| `validate_price`               | 価格が「正の数値」であるかを厳密に検証                                |
 
 ---
 
@@ -37,7 +37,7 @@ A Python-based shopping cart simulator with price validation, categorization, an
 
 ## 🛠️ 実行方法
 
-1. `shopping-cart.py` を実行してください（Google Colab でも可）
+1. [`shopping-cart.py`](./shopping-cart.py) を実行してください（Google Colab でも可）
 
 ```bash
 python shopping-cart.py
@@ -57,6 +57,6 @@ python shopping-cart.py
 
 ---
 
-## 👨‍🎓 学術的背景（補足）
+## 👨‍🎓 学術的背景
 
 > 大学院『プログラミング基礎Ⅱ』第1回課題として「ShopCartクラスの実装（追加・表示・削除）」をテーマに出題された内容に対し、より現実的なユースケースを想定して例外処理や永続化処理などの機能を拡張しました。
