@@ -1,2 +1,70 @@
-# shopping-cart
-A Python-based shopping cart simulator with price validation, categorization, and CSV import/export.（価格検証・カテゴリ分け・CSV入出力に対応したショッピングカート管理プログラム）
+# 🛒 shopping-cart
+
+A Python-based shopping cart simulator with price validation, categorization, and CSV import/export.  
+（価格検証・カテゴリ分け・CSV入出力に対応したショッピングカート管理プログラム）
+
+---
+
+## 📘 背景（大学院課題）
+
+このプログラムは、大学院講義『プログラミング基礎Ⅱ』で出題された「価格の追加・合計・削除・一覧表示」を行うクラス設計課題に対し、以下のような発展的な機能を加えて構築したものです。
+
+---
+
+## 🔍 実装した主な機能
+
+| 機能                       | 内容                                                                 |
+|----------------------------|----------------------------------------------------------------------|
+| `add_price`                | 値段の追加（入力値はバリデーション付き）                            |
+| `get_sum_price`            | 合計金額の算出                                                        |
+| `show_prices`              | 値段一覧をフォーマット済みで表示                                      |
+| `get_price_count`          | 値段の数を取得                                                        |
+| `remove_price`             | 任意インデックスの値段を削除                                          |
+| `update_price`             | 値段の更新（入力検証あり）                                            |
+| `categorize_prices`        | 安い／普通／高い のカテゴリに分類                                     |
+| `save_to_csv` / `load_from_csv` | CSVへの保存・読み込み機能                                       |
+| `validate_price`           | 価格が「正の数値」であるかを厳密に検証                                |
+
+---
+
+## 🧠 技術構成
+
+- Python（標準ライブラリのみ使用）
+- CLI（コンソールアプリケーション形式）
+- メソッドごとの関数化により拡張性・保守性を意識した設計
+
+---
+
+## 🛠️ 実行方法
+
+1. `shopping-cart.py` を任意の Python 環境で実行（Python 3.x）
+2. メニューに従って操作（CLIベース）
+
+```bash
+python shopping-cart.py
+```
+
+---
+
+## 📁 ファイル構成
+
+```
+shopping-cart/
+├── shopping-cart.py   # メインプログラム
+├── README.md          # このファイル
+└── prices.csv         # （任意で出力されるCSV）
+```
+
+---
+
+## 📝 備考
+
+- 値段の検証は小数点入力にも対応（例: `100`, `250.5`）
+- エラー処理を丁寧に記述し、ユーザーに明確なフィードバックを提供
+- CSV保存時にはリスト形式で保存・復元が可能
+
+---
+
+## 👨‍🎓 学術的背景（補足）
+
+> 大学院『プログラミング基礎Ⅱ』第1回課題として「ShopCartクラスの実装（追加・表示・削除）」をテーマに出題された内容に対し、より現実的なユースケースを想定して例外処理や永続化処理などの機能を拡張しました。
